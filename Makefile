@@ -4,7 +4,8 @@ NAME = libft.a
 RM = rm -f
 
 SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isalpha.c \
-		ft_isdigit.c ft_strlen.c
+		ft_isdigit.c ft_strlen.c \
+		ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c
 
 CFLAGS = -Wall -Wextra -Werror
 
