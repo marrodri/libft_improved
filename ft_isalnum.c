@@ -8,7 +8,7 @@
 ** ascii values: 65 = A, 90 = Z; 97 = a, 122 = z
 */
 int ft_isalnum(int c){
-	if(ft_isdigit(c) || ft_isalpha(c)){
+	if((ft_isdigit(c)) || (ft_isalpha(c))){
 		return (1);
 	}
 	return (0);
