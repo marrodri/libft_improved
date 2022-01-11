@@ -13,14 +13,11 @@
 
 
 int main(){
-	size_t test;
+	size_t len;
 	printf("Hello World\n");
 
-
-
-	int strLen = ft_strlen("sstr");
-	printf("0 is: %d\n", strLen);
-	strLen = ft_strlen((void*)0);
-	printf("null is: %d\n", strLen);
+	char *test = "Hello World";
+	char *substr = ft_substr(test, 1, 4);
+	printf("final output: |%s|", substr);
 	return 0;
 }

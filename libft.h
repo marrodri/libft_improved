@@ -29,6 +29,10 @@ int ft_strlen(char *str);
 // char *strlcat();
 // char *ft_toupper();
 // char *ft_strdup(char *str); 
+
+char *ft_substr(char const *s, unsigned int start, size_t len);
+void *ft_calloc(size_t n_itmes, size_t size);
+
 /*
 ** Text Output Utils
 */
@@ -50,5 +54,7 @@ void ft_putnbr_fd(int n, int fd);
 /*
 ** Linked List Utils
 */
+
+
 
 #endif
