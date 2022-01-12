@@ -15,5 +15,5 @@ void *ft_calloc(size_t n_items, size_t size){
 		alloc_mem[i] = '\0';
 		i++;
 	}
-	return alloc_mem;
+	return (alloc_mem);
 }

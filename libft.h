@@ -28,13 +28,15 @@ int ft_strlen(char *str);
 // char *ft_strlcpy();
 // char *strlcat();
 // char *ft_toupper();
-// char *ft_strdup(char *str); 
-
+//this function still has errors.
 char *ft_substr(char const *s, unsigned int start, size_t len);
-void *ft_calloc(size_t n_itmes, size_t size);
+//on works.
+char *ft_strdup(char *str); 
+char *ft_strjoin(char const *pre_str, char const *suf_str);
+
 
 /*
-** Text Output Utils
+** Text file descriptors Output Utils
 */
 
 void ft_putchar_fd(char c, int fd);
@@ -47,6 +49,7 @@ void ft_putnbr_fd(int n, int fd);
 ** Memory Utils
 */
 
+void *ft_calloc(size_t n_itmes, size_t size);
 // void *ft_memset();
 // void *ft_memcpy();
 // void ft_bzero();

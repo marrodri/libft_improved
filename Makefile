@@ -7,24 +7,25 @@ RM = rm -f
 
 SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isalpha.c \
 		ft_isdigit.c ft_strlen.c ft_putchar_fd.c ft_putendl_fd.c \
-		ft_putstr_fd.c ft_substr.c ft_calloc.c
+		ft_putstr_fd.c ft_substr.c ft_calloc.c ft_strdup.c ft_strjoin.c
 		
 #functions to work:
 #
 
-#  isalnum
-#	strdup
+#  isalnum (later)
+#	strdup -- finished and working good :)
 #	ft_itoa
 #	ft_putnbr_fd (this one needs the ft_itoa to return the transformed string
 #   and print it on the desired file descriptor)			
 # 
 
-#	todo for today jan10:
+#	todo for today jan11:
+#	--strjoin (good, but there is an issue)
+#	--strtrim ()
 #	--substr
-#	--strjoin
-#	--strtrim
-#	--itoa
 #	--strmapi.
+#	--ft_split
+#	--ft_itoa 
 
 CFLAGS = -Wall -Wextra -Werror
 
