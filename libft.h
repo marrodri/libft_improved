@@ -33,7 +33,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len);
 //on works.
 char *ft_strdup(char *str); 
 char *ft_strjoin(char const *pre_str, char const *suf_str);
-
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 /*
 ** Text file descriptors Output Utils
