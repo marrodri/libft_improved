@@ -49,11 +49,14 @@ void ft_putnbr_fd(int n, int fd);
 ** Memory Utils
 */
 
-void *ft_calloc(size_t n_itmes, size_t size);
-void *ft_memset(char *str, int c, size_t n);
-void *ft_bzero(char *str, size_t n);
-void *ft_memcpy(char *dest, const char *src, size_t n);
-// void *ft_calloc(size_t num, size_t size);
+void	*ft_calloc(size_t n_itmes, size_t size);
+void	*ft_memset(char *str, int c, size_t n);
+void	*ft_bzero(char *str, size_t n);
+void	*ft_memcpy(char *dest, const char *src, size_t n);
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
 /*
 ** Linked List Utils
 */

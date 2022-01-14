@@ -8,7 +8,8 @@ RM = rm -f
 SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isalpha.c \
 		ft_isdigit.c ft_strlen.c ft_putchar_fd.c ft_putendl_fd.c \
 		ft_putstr_fd.c ft_substr.c ft_calloc.c ft_strdup.c ft_strjoin.c \
-		ft_memset.c ft_bzero.c ft_memcpy.c ft_strmapi.c
+		ft_memset.c ft_bzero.c ft_memcpy.c ft_strmapi.c ft_memccpy.c\
+		ft_memmove.c ft_memcmp.c
 		
 #functions to work:
 #
@@ -17,13 +18,14 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isalpha.c \
 #   and print it on the desired file descriptor)			
 # 
 
-#	todo for today jan12, do at least all of these:
-#	--ft_memset (done, and finished)
-#	--ft_bzero (done), this is used inside calloc.
-#	--ft_memcpy (done)
-#	--ft_memmove ()
-#	--ft_memcmp ()
-#	
+#	todo for today jan13, do at least all of these:
+#	--ft_memcpy (done) finish :)
+#	--ft_memccpy (done, bugs to fi)
+#	--ft_memmove (almost done, find a way to overlap, without malloc)
+#	--ft_memcmp (done, fix some bugs)
+#	--ft_memchr()
+#
+#
 #	--strjoin (good, but there is an issue)
 #	--substr (good so far, but there's a small crash)
 #	--strmapi() finsish :).
