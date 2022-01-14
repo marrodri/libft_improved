@@ -26,10 +26,10 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isalpha.c \
 #	
 #	--strjoin (good, but there is an issue)
 #	--substr (good so far, but there's a small crash)
+#	--strmapi() finsish :).
 #	--ft_atoi()
 #	--strtrim ()
-#	--strmapi() test this one, if it works.
-#	--ft_split
+#	--ft_split()
 #	-Common Instructions-ft_itoa 
 #	ft_putnbr_fd (this one needs the ft_itoa to return the transformed string
 #
