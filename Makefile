@@ -5,8 +5,8 @@ NAME = libft.a
 
 RM = rm -f
 
-SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isalpha.c \
-		ft_isdigit.c ft_strlen.c ft_putchar_fd.c ft_putendl_fd.c \
+SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
+		ft_islower.c ft_isdigit.c ft_strlen.c ft_putchar_fd.c ft_putendl_fd.c \
 		ft_putstr_fd.c ft_substr.c ft_calloc.c ft_strdup.c ft_strjoin.c \
 		ft_memset.c ft_bzero.c ft_memcpy.c ft_strmapi.c ft_memccpy.c\
 		ft_memmove.c ft_memcmp.c ft_memchr.c
@@ -20,7 +20,7 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isalpha.c \
 
 #	todo for today jan13, do at least all of these:
 #	--ft_memcpy (done) finish :)
-#	--ft_memccpy (done, bugs to fi)
+#	--ft_memccpy (done and finished :)
 #	--ft_memmove (almost done, find a way to overlap, without malloc)
 #	--ft_memcmp (done, fix some bugs)
 #	--ft_memchr (done, fix the casting)

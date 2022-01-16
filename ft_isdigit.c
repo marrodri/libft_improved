@@ -6,7 +6,8 @@
 ** ascii values: 48 = '0', 57 = '9'
 */
 int ft_isdigit(int c){
-	if((c >= 48 && c <= 57)){
+	char unsigned_char = (char)c;
+	if((unsigned_char >= '0' && unsigned_char <= '9')){
 		return (1);
 	}
 	return (0);

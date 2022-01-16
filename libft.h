@@ -14,8 +14,10 @@ typedef struct	s_list{
 /*
 ** Boolean Utils
 */
-int ft_isalpha(int c);
+int ft_islower(int c);
+int ft_isupper(int c);
 int ft_isdigit(int d);
+int ft_isalpha(int c);
 int ft_isalnum(int c);
 int ft_isascii(int c);
 int ft_isprint(int c);
