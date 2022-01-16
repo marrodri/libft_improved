@@ -23,10 +23,12 @@ int ft_isascii(int c);
 int ft_isprint(int c);
 
 /*
-** String Utils
+** String and chars Utils
 */
 int ft_strlen(char *str);
-
+int ft_toupper(int c);
+int ft_tolower(int c);
+char *ft_strchr(const char *s, int c);
 // char *ft_strlcpy();
 // char *strlcat();
 // char *ft_toupper();

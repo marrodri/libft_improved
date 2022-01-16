@@ -9,7 +9,8 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 		ft_islower.c ft_isdigit.c ft_strlen.c ft_putchar_fd.c ft_putendl_fd.c \
 		ft_putstr_fd.c ft_substr.c ft_calloc.c ft_strdup.c ft_strjoin.c \
 		ft_memset.c ft_bzero.c ft_memcpy.c ft_strmapi.c ft_memccpy.c\
-		ft_memmove.c ft_memcmp.c ft_memchr.c
+		ft_memmove.c ft_memcmp.c ft_memchr.c ft_toupper.c ft_tolower.c\
+		ft_strchr.c
 		
 #functions to work:
 #
@@ -24,8 +25,15 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 #	--ft_memmove (almost done, find a way to overlap, without malloc)
 #	--ft_memcmp (done, fix some bugs)
 #	--ft_memchr (done, fix the casting)
+
 #
-#
+#	--ft_strchr
+#	--ft_strrchr
+#	--ft_strncmp??
+#	--ft_strlcpy
+#	--ft_strlcat	
+#	--ft_strnstr??
+#	
 #	--strjoin (good, but there is an issue)
 #	--substr (good so far, but there's a small crash)
 #	--strmapi() finsish :).
