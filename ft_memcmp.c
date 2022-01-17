@@ -8,10 +8,11 @@ int ft_memcmp(const void *s1, const void *s2, size_t n){
 	size_t i = 0;
 	// TODO (fix later the memcmp), for this function, check the testing and
 	// bring a notebook to fix this issue later by hand.
-	if(n == 0){
+	if(n == 0 || (!s1_unsigned && !s2_unsigned)){
 		return (0);
 	}
-	while(s1_unsigned[i] == s2_unsigned[i] && i < n && s1_unsigned[i] && s2_unsigned){
+	while((s1_unsigned[i] == s2_unsigned[i]) && (i < n)
+			&& s1_unsigned[i] && s2_unsigned){
 		i++;
 	}
 	if(i == n){

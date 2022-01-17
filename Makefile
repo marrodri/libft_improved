@@ -10,8 +10,7 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 		ft_putstr_fd.c ft_substr.c ft_calloc.c ft_strdup.c ft_strjoin.c \
 		ft_memset.c ft_bzero.c ft_memcpy.c ft_strmapi.c ft_memccpy.c\
 		ft_memmove.c ft_memcmp.c ft_memchr.c ft_toupper.c ft_tolower.c\
-		ft_strchr.c
-		
+		ft_strchr.c ft_strrchr.c ft_strncmp.c ft_strlcpy.c ft_atoi.c		
 #functions to work:
 #
 
@@ -19,21 +18,16 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 #   and print it on the desired file descriptor)			
 # 
 
-#	todo for today jan13, do at least all of these:
-#	--ft_memcpy (done) finish :)
-#	--ft_memccpy (done and finished :)
-#	--ft_memmove (almost done, find a way to overlap, without malloc)
-#	--ft_memcmp (done, fix some bugs)
-#	--ft_memchr (done, fix the casting)
-
+#	todo for today jan16, do at least all of these:
 #
-#	--ft_strchr
-#	--ft_strrchr
-#	--ft_strncmp??
-#	--ft_strlcpy
-#	--ft_strlcat	
-#	--ft_strnstr??
+#	--ft_strrchr (DONE :)
+#	--ft_strncmp (bugs to fix, but its almost close too)
+#	--ft_strlcat
+#	--ft_strnstr (how to get it right?)
 #	
+#	--ft_memcmp (done, fix some bugs)
+#	--ft_strlcpy (not even close, take your time)
+#	--ft_memmove (almost done, find a way to overlap, without malloc)
 #	--strjoin (good, but there is an issue)
 #	--substr (good so far, but there's a small crash)
 #	--strmapi() finsish :).
