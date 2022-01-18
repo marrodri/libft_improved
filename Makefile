@@ -11,7 +11,7 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 		ft_memset.c ft_bzero.c ft_memcpy.c ft_strmapi.c ft_memccpy.c\
 		ft_memmove.c ft_memcmp.c ft_memchr.c ft_toupper.c ft_tolower.c\
 		ft_strchr.c ft_strrchr.c ft_strncmp.c ft_strlcpy.c ft_atoi.c\
-		ft_strlcat.c ft_strnstr.c
+		ft_strlcat.c ft_strnstr.c ft_striswhitespace.c ft_iswhitespace.c
 
 
 
@@ -23,9 +23,7 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 #	todo for today jan17, do at least all of these:
 #
 #	--ft_strlcat
-#	--ft_strnstr
 #	
-#	--ft_strnstr (how to get it right?)
 #	--ft_strncmp (bugs to fix, but its almost close too)
 #	--ft_memcmp (done, fix some bugs)
 #	--ft_strlcpy (not even close, take your time)
