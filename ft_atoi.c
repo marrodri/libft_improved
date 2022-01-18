@@ -17,27 +17,36 @@ int ft_atoi(const char *nptr){
 	int tmp_int = 0;
 	int pow_ten = 1;
 	int i = 0;
+	int is_neg = 0;
 	//move ahead, any whitespace
-	while(nptr[i] == ' ' || nptr[i] == '\t'){
+	while((nptr[i] == ' ' || nptr[i] == '\t' )&& nptr[i]){
 		i++;
 		nptr_numlen++;
 	}
-	while(nptr[nptr_numlen] >= '0' && nptr[nptr_numlen] <='9'){
+	if(nptr[i] == '-'){
+		is_neg = 1;
+		i++;
 		nptr_numlen++;
 	}
-	while((nptr_numlen - 1) >= i){
+	while(nptr[nptr_numlen] >= '0' && nptr[nptr_numlen] <='9' 
+		&& nptr[nptr_numlen]){
+		nptr_numlen++;
+	}
+	nptr_numlen--;
+	while((nptr_numlen) >= i){
 		// converting to int
 		tmp_int = nptr[nptr_numlen] - '0';
 		// multiplying by ten
 		tmp_int *= pow_ten;
 		// adding to the nptr_numlen conversion
-		nptr_numlen += tmp_int;
+		nptr_int += tmp_int;
 		//multiplying the pow_ten by 10
 		pow_ten *= 10;
 		//decrease to the next char.
 		nptr_numlen--;
 	}
+	if(is_neg){
+		nptr_int *= -1;
+	}
 	return (nptr_int);
-
-
 }
