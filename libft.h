@@ -70,6 +70,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 ** Linked List Utils
 */
 
-
+t_list *ft_lstnew(void *content);
+int		ft_lstsize(t_list *lst);
 
 #endif
