@@ -12,7 +12,7 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 		ft_memmove.c ft_memcmp.c ft_memchr.c ft_toupper.c ft_tolower.c\
 		ft_strchr.c ft_strrchr.c ft_strncmp.c ft_strlcpy.c ft_atoi.c\
 		ft_strlcat.c ft_strnstr.c ft_striswhitespace.c ft_iswhitespace.c\
-		ft_lstnew.c ft_lstsize.c
+		ft_lstnew.c ft_lstsize.c ft_lstadd_front.c ft_lstadd_back.c
 
 
 #functions to work:
@@ -31,7 +31,7 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 #	--strjoin (good, but there is an issue)
 #	--substr (good so far, but there's a small crash)
 #	--strmapi() finsish :).
-#	--ft_atoi() almost, some small bugs to fix .
+#	--ft_atoi() almost, some small bugs to fix.
 #	--strtrim ()
 #	--ft_split()
 #	-Common Instructions-ft_itoa 

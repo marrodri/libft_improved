@@ -10,7 +10,9 @@ void *ft_memmove(void *dest, const void *src, size_t n){
 	size_t i = 0;
 	unsigned char *dest_arr = (unsigned char*)dest;
 	const unsigned char *src_arr = (const unsigned char *)src;
-	const char *tmp_arr = ft_calloc(n + 1,sizeof(char));
+	
+	unsigned char *tmp_arr = dest_arr;
+	// char *tmp_arr = ft_calloc(n + 1,sizeof(char));
 	//set the tmp_arr
 	ft_memcpy((char *)tmp_arr, (const char*)src_arr, n);
 	//copy from tmp to dest.

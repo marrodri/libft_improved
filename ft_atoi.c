@@ -19,7 +19,7 @@ int ft_atoi(const char *nptr){
 	int i = 0;
 	int is_neg = 0;
 	//move ahead, any whitespace
-	while((nptr[i] == ' ' || nptr[i] == '\t' )&& nptr[i]){
+	while(ft_iswhitespace(nptr[i])){
 		i++;
 		nptr_numlen++;
 	}
