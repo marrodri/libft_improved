@@ -8,15 +8,14 @@ int ft_memcmp(const void *s1, const void *s2, size_t n){
 	size_t i = 0;
 	// TODO (fix later the memcmp), for this function, check the testing and
 	// bring a notebook to fix this issue later by hand.
-	if(n == 0 || (!s1_unsigned && !s2_unsigned)){
-		return (0);
-	}
-	while((s1_unsigned[i] == s2_unsigned[i]) && (i < n)
-			&& s1_unsigned[i] && s2_unsigned){
+	//why the previous version doesnt work? 
+	//it could be that the n input is an out of bounds number
+	//check the test of the previous version.
+	while((i < n)){
+		if(s1_unsigned[i] != s2_unsigned[i]){
+			return (s1_unsigned[i] - s2_unsigned[i]);
+		}
 		i++;
 	}
-	if(i == n){
-		return (s1_unsigned[i - 1] - s2_unsigned[i - 1]);
-	}
-	return (s1_unsigned[i] - s2_unsigned[i]);
+	return (0);
 }
