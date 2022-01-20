@@ -13,27 +13,29 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 		ft_strchr.c ft_strrchr.c ft_strncmp.c ft_strlcpy.c ft_atoi.c\
 		ft_strlcat.c ft_strnstr.c ft_striswhitespace.c ft_iswhitespace.c\
 		ft_lstnew.c ft_lstsize.c ft_lstadd_front.c ft_lstadd_back.c\
-		ft_strtrim.c
+		ft_strtrim.c ft_split.c
 
 #functions to work:
 #
 #  isalnum (later)
 #   and print it on the desired file descriptor)			
 # 
-#	todo for today jan17, do at least all of these:
-#
-#	
+#	todo for tomorrow jan20, do at least all of these:
+#	--ft_itoa 
+#	--ft_putnbr_fd (this one needs the ft_itoa to return the transformed string
+#	--ft_lstlast
+#	--lstdelone
+#	--lstclear
+#	--lstiter
+#	--lstmap
 
-#	--ft_strlcat ()
+
+#	--ft_strlcat (almost done, just one issue :)
 #	--ft_strlcpy (almost done, just one issue :)
-#	--ft_memmove (done, take your time to fully understand this function
-# )		in depth)
-#	--strjoin (good, but there its not protected)
 #	--substr (good so far, but there's a small crash)
+#	--strjoin (good, but there its not protected)
 #	--strtrim (good, almost done too)
-#	--ft_split()
-#	-Common Instructions-ft_itoa 
-#	ft_putnbr_fd (this one needs the ft_itoa to return the transformed string
+#	--ft_split(good, almost done, just 3 bugs to check :)
 #
 
 CFLAGS = -Wall -Wextra -Werror
