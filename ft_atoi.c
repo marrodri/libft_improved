@@ -28,6 +28,11 @@ int ft_atoi(const char *nptr){
 		i++;
 		nptr_numlen++;
 	}
+	else if(nptr[i] == '+'){
+		i++;
+		nptr_numlen++;
+
+	}
 	while(nptr[nptr_numlen] >= '0' && nptr[nptr_numlen] <='9' 
 		&& nptr[nptr_numlen]){
 		nptr_numlen++;

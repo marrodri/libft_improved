@@ -11,18 +11,19 @@ size_t ft_strlcat(char *dst, const char *src, size_t size){
 	size_t dst_i = dst_len;
 
 	// size + dst_len - 1 byte(ignore the null byte).
-	if(size <= 0 || size > dst_len){
-		return 0;
+	if(size <= 0 || size < dst_len){
+		// return 0;
+		return(src_len + size);
 	}
-	dst[dst_len + size] = '\0';
-	while(dst_i < (dst_len + size - 1) && src[src_i]){
+	// dst[dst_len + size] = '\0';
+	size = dst_len - size - 1;
+	while(size > 0  && src[src_i]){
 		// concatenating dst
 		dst[dst_i] =  src[src_i];
 		dst_i++;
 		src_i++;
+		size--;
 	}
-	if(!src[src_i]){
-		dst[dst_i] =  src[src_i];
-	}
+	dst[dst_i] = '\0';
 	return (dst_len + src_len);
 }
