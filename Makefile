@@ -12,8 +12,8 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 		ft_memmove.c ft_memcmp.c ft_memchr.c ft_toupper.c ft_tolower.c\
 		ft_strchr.c ft_strrchr.c ft_strncmp.c ft_strlcpy.c ft_atoi.c\
 		ft_strlcat.c ft_strnstr.c ft_striswhitespace.c ft_iswhitespace.c\
-		ft_lstnew.c ft_lstsize.c ft_lstadd_front.c ft_lstadd_back.c
-
+		ft_lstnew.c ft_lstsize.c ft_lstadd_front.c ft_lstadd_back.c\
+		ft_strtrim.c
 
 #functions to work:
 #
@@ -22,17 +22,15 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 # 
 #	todo for today jan17, do at least all of these:
 #
-#	--ft_strlcat
 #	
-#	--ft_strncmp (bugs to fix, but its almost close too)
-#	--ft_memcmp (done, fix some bugs)
-#	--ft_strlcpy (not even close, take your time)
-#	--ft_memmove (almost done, find a way to overlap, without malloc)
-#	--strjoin (good, but there is an issue)
+
+#	--ft_strlcat ()
+#	--ft_strlcpy (almost done, just one issue :)
+#	--ft_memmove (done, take your time to fully understand this function
+# )		in depth)
+#	--strjoin (good, but there its not protected)
 #	--substr (good so far, but there's a small crash)
-#	--strmapi() finsish :).
-#	--ft_atoi() almost, some small bugs to fix.
-#	--strtrim ()
+#	--strtrim (good, almost done too)
 #	--ft_split()
 #	-Common Instructions-ft_itoa 
 #	ft_putnbr_fd (this one needs the ft_itoa to return the transformed string
