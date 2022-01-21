@@ -45,7 +45,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
-
+char *ft_itoa(int n);
 /*
 ** Text file descriptors Output Utils
 */
