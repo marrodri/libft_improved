@@ -25,12 +25,15 @@ void ft_putnbr_fd(int n, int fd){
 	// this function DONT NEEDS the itoa.
 	if(n == 0){
 		ft_putchar_fd('0', fd);
+		return ;
 	}
 	if(n == 2147483647){
 		ft_putstr_fd("2147483647", fd);
+		return ;
 	}
 	if(n == -2147483648){
 		ft_putstr_fd("-2147483648", fd);
+		return ;
 	}
 	if(n < 0){
 		n *= -1;
@@ -46,5 +49,5 @@ void ft_putnbr_fd(int n, int fd){
 		n %= num_pow;
 		num_pow /= 10;
 	}
-	// ft_putchar_fd(num_char, fd);
+	return ;
 }

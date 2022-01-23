@@ -13,9 +13,15 @@ int ft_strhaschar(const char *str, char c){
 
 char *ft_strtrim(char const *s1, char const *set){
 	int i = 0;
-	int len = ft_strlen((char*)s1) - 1;
+	int len;
 	int diff = 0;
 	char *trimmed_str;
+
+	if(!s1){
+		return NULL;
+	}
+	
+	len = ft_strlen((char*)s1) - 1;
 	//check at what point do we need to trim
 	// from the beggining of the string.
 	while(ft_strhaschar(set, s1[i])){
@@ -34,7 +40,8 @@ char *ft_strtrim(char const *s1, char const *set){
 	diff  = (len - i) + 1;
 	//--get the diff and allocate a new string
 	//with the defined trimmed area.
-	trimmed_str = (char*)malloc((diff + 1) *sizeof(char));
+	// trimmed_str = (char*)malloc((diff + 1) *sizeof(char));
+	trimmed_str = ft_calloc(diff+1, sizeof(char));
 	if(!trimmed_str){
 		return NULL;
 	}

@@ -22,6 +22,12 @@ int main(){
 	t_list *newNodeY = ft_lstnew((char*)"newNodeY");
 	t_list *newNodeZ = ft_lstnew((char*)"newNodeZ");
 
+
+	// linked list len test
+	t_list *l = ft_lstnew(strdup("1"));
+	l->next = ft_lstnew(strdup("2"));
+	l->next->next = ft_lstnew(strdup("3"));
+
 	ft_lstadd_front(&newNodeA, newNodeB);
 	ft_lstadd_front(&newNodeA, newNodeC);
 	ft_lstadd_front(&newNodeA, newNodeD);
@@ -35,4 +41,9 @@ int main(){
 	printf("add_back test=====\n");
 	ft_printlst(newNodeW);
 	printf("==================\n");
+
+	// linked list len
+	int actual = ft_lstsize(l);
+
+	printf("====l size is |%d|\n", actual);
 }

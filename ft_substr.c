@@ -11,25 +11,26 @@
 
 char *ft_substr(char const *s, unsigned int start, size_t len){
 	unsigned int i = 0;
-	unsigned int str_len = ft_strlen((char*)s);
 	char *substr;
-	if(!s || str_len <= start){
+	
+	if (!s) {
 		return (NULL);
+	}
+	if (start >= (unsigned int)ft_strlen((char*)s)){
+		return (ft_strdup(""));
 	}
 
 	//this should be a function, this is calloc
-	substr = (char *)malloc((len + 1) * sizeof(char));
-	if(!substr){
+	// substr = (char *)malloc((len + 1) * sizeof(char));
+	substr = ft_calloc((len + 1), sizeof(char));
+	if (!substr) {
 		return NULL;
 	}
-	substr[len] = '\0';
-
 	while(i < len){
-		substr[i] = s[start];
+		substr[i] = s[start + i];
 		i++;
-		start++;
 	}
-	return substr;
+	return (substr);
 }
 
 
