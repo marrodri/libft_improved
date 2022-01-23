@@ -7,7 +7,7 @@ int ft_numpow_len(int n){
 	if(n < 0){
 		n*=-1;
 	}
-	while(n>0){
+	while(n>=10){
 		n /=10;
 		pow*=10;
 	}
@@ -15,14 +15,12 @@ int ft_numpow_len(int n){
 }
 
 void ft_putnbr_fd(int n, int fd){
-	// char *str_num;
+	//logic is wrong in big numbers.
+	//take your time to fix this.
 	char	num_char;
 	int		num_pow = 0;
 	int		top_num = 0;
-	// you dont need to allocate,
-	// use the code from itoa as a base reference
-	// for this function.
-	// this function DONT NEEDS the itoa.
+
 	if(n == 0){
 		ft_putchar_fd('0', fd);
 		return ;
@@ -40,8 +38,6 @@ void ft_putnbr_fd(int n, int fd){
 		ft_putchar_fd('-', fd);
 	}
 	num_pow = ft_numpow_len(n);
-	//1234 % 1000 = 234 % 100  = 34 % 10 
-	//1000 / 10 => 100 / 10 => 10 / 10 => 1
 	while(n > 0){
 		top_num = n/num_pow;
 		num_char = top_num + '0';

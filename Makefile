@@ -20,7 +20,6 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 #   and print it on the desired file descriptor)			
 # 
 #	todo for tomorrow jan20, do at least all of these:
-#	--ft_putnbr_fd (this one needs the ft_itoa to return the transformed string
 #	--ft_lstlast
 #	--lstdelone
 #	--lstclear
