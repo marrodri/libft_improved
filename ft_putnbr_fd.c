@@ -7,16 +7,14 @@ int ft_numpow_len(int n){
 	if(n < 0){
 		n*=-1;
 	}
-	while(n>=10){
-		n /=10;
-		pow*=10;
+	while(n >= 10){
+		n /= 10;
+		pow *= 10;
 	}
 	return (pow);
 }
 
 void ft_putnbr_fd(int n, int fd){
-	//logic is wrong in big numbers.
-	//take your time to fix this.
 	char	num_char;
 	int		num_pow = 0;
 	int		top_num = 0;

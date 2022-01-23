@@ -1,14 +1,19 @@
 #include "libft.h"
 
-// add back
+// seems to work
 void ft_lstadd_back(t_list **lst, t_list *new){
-	t_list *head = **(&lst);
-
-	while((*lst)->next){
-		(*lst) = (*lst)->next;
+	if(lst){
+		// lstlast
+		if(!*lst || !new){
+			return ;
+		}
+		t_list *head = **(&lst);
+		while((*lst)->next){
+			(*lst) = (*lst)->next;
+		}
+		(*lst)->next = new;
+		*lst = head;
 	}
-	(*lst)->next = new;
-	*lst = head;
 }
 
 
