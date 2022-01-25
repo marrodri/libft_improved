@@ -10,8 +10,11 @@ int ft_strclen(const char* str, int c){
 	return len;
 }
 int ft_wordcounter(const char *str, char c){
-	int words = 0;
+	int words = 1;
 	int i = 0;
+	if(!str[i]){
+		return 0;
+	}
 	if(str[i] == c){
 		i++;
 	}
@@ -24,6 +27,7 @@ int ft_wordcounter(const char *str, char c){
 
 	return words;
 }
+
 
 char **ft_split(char const *s, char c){
 	int counted_words = 0;
@@ -39,15 +43,18 @@ char **ft_split(char const *s, char c){
 	}
 	// first iterate by counting how many words there are, separated the c char
 	counted_words = ft_wordcounter(s, c);
-	if (counted_words == 0){
-		return (NULL);
-	}
 	//then allocate the words + 1. with malloc
+	// if(!counted_words){
+	// 	return NULL;
+	// }
 	words = (char**)malloc((counted_words + 1)*sizeof(char*));
 	if(!words){
 		return (NULL);
 	}
 	words[counted_words] = NULL;
+	if(!counted_words){
+		return words;
+	}
 	//then iterate the s, by finding the starting address of the word
 	//and the length of the word to copy.
 	while(s[str_i]){
