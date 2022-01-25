@@ -33,5 +33,5 @@ t_list *ft_lstmap(t_list  *lst, void *(*f)(void *), void (*del)(void*)){
 	if(!new_mapped_lst){
 		return NULL;
 	}
-	return new_mapped_lst;
+	return (new_mapped_lst);
 }

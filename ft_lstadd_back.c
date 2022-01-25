@@ -2,7 +2,10 @@
 
 // seems to work
 void ft_lstadd_back(t_list **lst, t_list *new){
-	if(lst){
+	if(!*lst && new){
+		*lst = new;
+	}
+	else{
 		// lstlast
 		if(!*lst || !new){
 			return ;
