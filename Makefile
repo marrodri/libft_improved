@@ -12,7 +12,7 @@ SRC = ft_isprint.c ft_isascii.c ft_isalnum.c ft_isupper.c ft_isalpha.c \
 		ft_strlcat.c ft_strnstr.c ft_striswhitespace.c ft_iswhitespace.c\
 		ft_lstnew.c ft_lstsize.c ft_lstadd_front.c ft_lstadd_back.c\
 		ft_strtrim.c ft_split.c ft_itoa.c ft_putnbr_fd.c ft_lstlast.c\
-		ft_lstdelone.c ft_lstclear.c
+		ft_lstdelone.c ft_lstclear.c ft_lstmap.c ft_lstiter.c
 
 #functions to work:
 #
