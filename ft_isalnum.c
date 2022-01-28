@@ -19,6 +19,8 @@
 **    otherwise, it returns a 0.
 ** ascii values: 65 = A, 90 = Z; 97 = a, 122 = z
 */
-int ft_isalnum(int c){
+
+int	ft_isalnum(int c)
+{
 	return ((ft_isdigit(c)) || (ft_isalpha(c)));
 }
