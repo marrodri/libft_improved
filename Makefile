@@ -51,8 +51,9 @@ CFLAGS = -Wall -Wextra -Werror
 
 OBJ = $(SRC:.c=.o)
 
+# @gcc $(CFLAGS) -c $(SRC)
 $(NAME):
-		@gcc $(CFLAGS) -c $(SRC)
+		@gcc -c $(SRC)
 		@ar rc $(NAME) $(OBJ)
 		@ranlib $(NAME)
 

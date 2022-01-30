@@ -26,24 +26,16 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	is_founded = 0;
 	strnstr_index = 0;
 	if (ft_striswhitespace((char *)little))
-	{
 		return ((char *)big);
-	}
 	while (big_i < len && big[big_i]
 		&& !is_founded)
 	{
 		if (little[little_i] == big[big_i])
-		{
 			little_i++;
-		}
 		else
-		{
 			little_i = 0;
-		}
 		if (little_len == little_i)
-		{
 			is_founded = 1;
-		}	
 		big_i++;
 	}
 	if (is_founded)

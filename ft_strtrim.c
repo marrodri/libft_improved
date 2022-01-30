@@ -34,26 +34,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	diff = 0;
 	if (!s1)
-	{
 		return (NULL);
-	}
 	if (!set)
-	{
 		return (ft_strdup((char *)s1));
-	}
 	end = ft_strlen((char *)s1) - 1;
 	while (ft_strhaschar(set, s1[start]))
-	{
 		start++;
-	}
-	if (start == (end+1))
-	{
+	if (start == (end + 1))
 		return (NULL);
-	}
 	while (ft_strhaschar(set, s1[end]))
-	{
 		end--;
-	}
 	diff = (end - start) + 1;
 	trimmed_str = ft_substr(s1, start, diff);
 	return (trimmed_str);

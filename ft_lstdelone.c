@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	t_list *top_head;
+	t_list	*top_head;
 
 	top_head = lst;
 	lst = lst->next;

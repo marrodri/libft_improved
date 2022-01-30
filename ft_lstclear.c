@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -22,7 +20,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	{
 		tmp_node = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		*lst = tmp_node; 
+		*lst = tmp_node;
 	}
 	*lst = NULL;
 }

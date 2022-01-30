@@ -18,7 +18,7 @@ char	*ft_strdup(char *s)
 	int		str_len;
 	int		i;
 	char	*duplicate_string;
-	
+
 	i = 0;
 	str_len = ft_strlen(s);
 	duplicate_string = (char *)ft_calloc(str_len + 1, sizeof(char));

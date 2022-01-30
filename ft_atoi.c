@@ -24,54 +24,58 @@
 **	// '1234'
 */
 
-int	ft_atoi(const char *nptr)
+int	asciinumlen(char *asciinum)
+{
+	int	nptr_numlen;
+
+	nptr_numlen = 0;
+	while (asciinum[nptr_numlen] >= '0' && asciinum[nptr_numlen] <= '9'
+		&& asciinum[nptr_numlen])
+		nptr_numlen++;
+	return (nptr_numlen);
+}
+
+int	movingwhitespace(char *asciinum)
+{
+	int	i;
+
+	i = 0;
+	while (ft_iswhitespace(asciinum[i]))
+	{
+		i++;
+	}
+	return (i);
+}
+
+int		ft_atoi(const char *nptr)
 {
 	int	nptr_numlen;
 	int	nptr_int;
-	int	tmp_int;
 	int	pow_ten;
 	int	i;
 	int	is_neg;
 
 	nptr_numlen = 0;
 	nptr_int = 0;
-	tmp_int = 0;
 	pow_ten = 1;
 	i = 0;
 	is_neg = 0;
-	while (ft_iswhitespace(nptr[i]))
+	i = movingwhitespace((char *)&nptr[i]);
+	nptr_numlen = i;
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
+		is_neg = (nptr[i] == '-');
 		i++;
 		nptr_numlen++;
 	}
-	if (nptr[i] == '-')
+	nptr_numlen += asciinumlen((char *)&nptr[nptr_numlen]);
+	while ((nptr_numlen - 1) >= i)
 	{
-		is_neg = 1;
-		i++;
-		nptr_numlen++;
-	}
-	else if (nptr[i] == '+')
-	{
-		i++;
-		nptr_numlen++;
-	}
-	while (nptr[nptr_numlen] >= '0' && nptr[nptr_numlen] <= '9'
-		&& nptr[nptr_numlen])
-	{
-		nptr_numlen++;
-	}
-	nptr_numlen--;
-	while ((nptr_numlen) >= i)
-	{
-		tmp_int = nptr[nptr_numlen] - '0';
-		tmp_int *= pow_ten;
-		nptr_int += tmp_int;
+		nptr_int += (nptr[nptr_numlen - 1] - '0') * pow_ten;
 		pow_ten *= 10;
 		nptr_numlen--;
 	}
 	if (is_neg)
-	{
 		nptr_int *= -1;
-	}
 	return (nptr_int);
 }
