@@ -18,15 +18,10 @@ int	ft_striswhitespace(char *str)
 
 	i = 0;
 	if (!str)
-	{
 		return (1);
-	}
 	while (ft_iswhitespace(str[i]))
-	{
 		i++;
-	}
-	if((!str[i])){
+	if ((!str[i]))
 		return (1);
-	}
 	return (0);
 }

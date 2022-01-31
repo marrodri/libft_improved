@@ -18,13 +18,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	big_i;
 	size_t	little_i;
 	size_t	little_len;
-	size_t	strnstr_index;
 
 	big_i = 0;
 	little_i = 0;
 	little_len = ft_strlen((char *)little);
 	is_founded = 0;
-	strnstr_index = 0;
 	if (ft_striswhitespace((char *)little))
 		return ((char *)big);
 	while (big_i < len && big[big_i]
@@ -34,14 +32,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			little_i++;
 		else
 			little_i = 0;
-		if (little_len == little_i)
-			is_founded = 1;
+		is_founded = (little_len == little_i);
 		big_i++;
 	}
 	if (is_founded)
-	{
-		strnstr_index = big_i - little_len;
-		return ((char *)(&big[strnstr_index]));
-	}
+		return ((char *)(&big[big_i - little_len]));
 	return (NULL);
 }

@@ -10,10 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-int		ft_numlen(int n)
+int	ft_numlen(int n)
 {
 	int	num_len;
 
@@ -31,54 +30,42 @@ int		ft_numlen(int n)
 	return (num_len);
 }
 
+char	*ft_itoa_exceptions(int n)
+{
+	if (n == 0)
+		return (ft_strdup("0"));
+	if (n == 2147483647)
+		return (ft_strdup("2147483647"));
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	return (NULL);
+}
+
 char	*ft_itoa(int n)
 {
 	int		num_len;
-	int		is_neg; 
+	int		is_neg;
 	char	*num_char;
-	int		tmp_num;
 
-	if (n == 0)
-	{
-		return (ft_strdup("0"));
-	}
-	if (n == 2147483647)
-	{
-		return (ft_strdup("2147483647"));
-	}
-	if (n == -2147483648)
-	{
-		return (ft_strdup("-2147483648"));
-	}
+	num_char = ft_itoa_exceptions(n);
+	if (num_char)
+		return (num_char);
 	num_len = ft_numlen(n);
-	is_neg = 0;
-	num_char = (char *)malloc((num_len + 1)*sizeof(char));
+	num_char = ft_calloc((num_len + 1), sizeof(char));
 	if (!num_char)
-	{
 		return (NULL);
-	}
-	num_char[num_len] = '\0';
-	if (n < 0)
-	{
+	is_neg = (n < 0);
+	if (is_neg)
 		n *= -1;
-		num_char[0] = '-';
-		is_neg = 1;
-	}
-	num_len--;
-	while (num_len > 0)
+	while ((num_len - 1) > 0)
 	{
-		tmp_num = n % 10;
-		num_char[num_len] = '0' + tmp_num;
+		num_char[num_len - 1] = '0' + (n % 10);
 		n /= 10;
 		num_len--;
 	}
 	if (is_neg)
-	{
 		num_char[0] = '-';
-	}
 	else
-	{
 		num_char[0] = n + '0';
-	}
 	return (num_char);
 }

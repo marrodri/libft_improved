@@ -14,7 +14,7 @@
 
 int	ft_numpow_len(int n)
 {
-	int pow;
+	int	pow;
 
 	pow = 1;
 	if (n < 0)
