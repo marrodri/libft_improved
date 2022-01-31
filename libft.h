@@ -56,7 +56,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 char	*ft_strtrim(char const *s1, char const *set);
+
+
+//TODO under maintenance
 char	**ft_split(char const *s, char c);
+// char			**ft_strsplit_correct(char const *s, char c);
+
 char 	*ft_itoa(int n);
 /*
 ** Text file descriptors Output Utils

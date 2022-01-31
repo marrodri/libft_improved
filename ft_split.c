@@ -21,25 +21,24 @@ int ft_strclen(const char* str, int c){
 	}
 	return len;
 }
-int ft_wordcounter(const char *str, char c){
-	int words = 1;
-	int i = 0;
-	if(!str[i]){
-		return 0;
-	}
-	if(str[i] == c){
-		i++;
-	}
-	while(str[i]){
-		if(str[i - 1] == c && str[i] != c){
-			words++;
-		}
-		i++;
-	}
+int ft_wordcounter(const char *s, char c){
+	int	word;
+	int	i;
 
-	return words;
+	i = 0;
+	word = 0;
+	if (s == NULL)
+		return (0);
+	while (s[i])
+	{
+		if (s[i] == c && s[i + 1] != c && s[i + 1] != '\0')
+			word++;
+		i++;
+	}
+	if (s[0] != '\0')
+		word++;
+	return (word);
 }
-
 
 char **ft_split(char const *s, char c){
 	int counted_words = 0;
@@ -56,20 +55,15 @@ char **ft_split(char const *s, char c){
 	// first iterate by counting how many words there are, separated the c char
 	counted_words = ft_wordcounter(s, c);
 	//then allocate the words + 1. with malloc
-	// if(!counted_words){
-	// 	return NULL;
-	// }
 	words = (char**)malloc((counted_words + 1)*sizeof(char*));
-	if(!words){
+	if(!words)
 		return (NULL);
-	}
 	words[counted_words] = NULL;
-	if(!counted_words){
-		return words;
-	}
 	//then iterate the s, by finding the starting address of the word
 	//and the length of the word to copy.
-	while(s[str_i]){
+	while(s[str_i] && words_j < counted_words){
+		//if the current index is not the character that separates
+		//then set the new word
 		if (s[str_i] != c){
 			//iterate the function here.
 			// ft_strlcpy();
@@ -80,19 +74,23 @@ char **ft_split(char const *s, char c){
 			//word_len = 5
 			
 			word_len = ft_strclen(&s[str_i], c);
-			word = (char*)malloc((word_len + 1)*sizeof(char));
-			if(!word){
+			//create a new word.
+			word = (char *)malloc((word_len + 1) * sizeof(char));
+			if(!word)
 				return NULL;
-			}
 			word[word_len] = '\0';
 			ft_memcpy(word, &s[str_i], word_len);
+			//assign the newly created word.
 			words[words_j] = word;
+			//move to the next location of the big array.
 			str_i += word_len;
+			//go to the next word empty space.
 			words_j++;
 		}
 		else{
+			//keep iterating until a new word begins.
 			str_i++;
 		}
 	}
-	return words;
+	return (words);
 }
