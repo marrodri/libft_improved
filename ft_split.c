@@ -12,14 +12,17 @@
 
 #include "libft.h"
 
-int ft_strclen(const char* str, int c){
-	int len = 0;
-	while(str[len] != c && str[len]){
+int	ft_strchrlen(const char *str, int c)
+{
+	int	len;
+
+	len = 0;
+	while (str[len] != c && str[len])
 		len++;
-	}
-	return len;
+	return (len);
 }
-int		ft_wordcounter(const char *s, char c)
+
+int	ft_wordcounter(const char *s, char c)
 {
 	int	word;
 	int	i;
@@ -41,11 +44,19 @@ int		ft_wordcounter(const char *s, char c)
 	return (word);
 }
 
+char	*ft_setword(char *s, int word_len, int str_i)
+{
+	char	*word;
+
+	word = ft_calloc((word_len + 1), sizeof(char));
+	ft_memcpy(word, &s[str_i], word_len);
+	return (word);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		counted_words;
 	char	**words;
-	char	*word;
 	int		str_i;
 	int		words_j;
 	int		word_len;
@@ -55,19 +66,13 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	counted_words = ft_wordcounter(s, c);
-	words = ft_calloc(counted_words + 1, sizeof(char*));
-	if(!words)
-		return (NULL);
-	while (s[str_i] && words_j < counted_words)
+	words = ft_calloc(counted_words + 1, sizeof(char *));
+	while (s[str_i] && words_j < counted_words && words)
 	{
 		if (s[str_i] != c)
 		{
-			word_len = ft_strclen(&s[str_i], c);
-			word = ft_calloc((word_len + 1), sizeof(char));
-			if(!word)
-				return NULL;
-			ft_memcpy(word, &s[str_i], word_len);
-			words[words_j] = word;
+			word_len = ft_strchrlen(&s[str_i], c);
+			words[words_j] = ft_setword((char *)s, word_len, str_i);
 			str_i += word_len;
 			words_j++;
 		}
