@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+input:
+**	n_items: the number of items to allocate
+**	size: the size of each item that will use.
+
+output: 
+**	the allocated array from the defined
+	n_items * size. The array is initialized
+	to null
+*/
 void	*ft_calloc(size_t n_items, size_t size)
 {
 	char	*alloc_mem;
@@ -32,3 +42,5 @@ void	*ft_calloc(size_t n_items, size_t size)
 	}
 	return (alloc_mem);
 }
+
+
