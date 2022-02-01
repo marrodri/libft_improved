@@ -13,6 +13,9 @@
 #include "libft.h"
 
 /*
+usage:
+**
+
 input:
 **	n_items: the number of items to allocate
 **	size: the size of each item that will use.
@@ -42,5 +45,3 @@ void	*ft_calloc(size_t n_items, size_t size)
 	}
 	return (alloc_mem);
 }
-
-

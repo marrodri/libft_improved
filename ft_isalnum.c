@@ -19,6 +19,16 @@
 ** ascii values: 65 = A, 90 = Z; 97 = a, 122 = z
 */
 
+/*
+usage:
+**
+
+input:
+**
+
+output: 
+**
+*/
 int	ft_isalnum(int c)
 {
 	return ((ft_isdigit(c)) || (ft_isalpha(c)));

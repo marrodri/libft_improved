@@ -11,7 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+usage:
+**it checks c char, if it's a white space character or not.
 
+input:
+** c: the character to check
+
+output: 
+**a boolean value that see if c is a white space character or not.
+*/
 int	ft_iswhitespace(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\n'

@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+/*
+usage:
+** it returns the address of the first occurrence of the
+character c in the string s
+
+input:
+**s: the string to search
+**c: the character to find
+
+output: 
+**returns an address to the matched character or NULL if 
+the charcter is not found. The null byte, '\0', can also be founded
+and return its address. 
+*/
 char	*ft_strchr(const char *s, int c)
 {
 	int	i;

@@ -13,9 +13,17 @@
 #include "libft.h"
 
 /*
+usage:
 ** ft_bzero will set the data array to 0, starting from
-** the pointed memory address to the defined length of the memory
-** to delete.
+the pointed memory address to the defined length of the memory
+to delete.
+
+input:
+** s: the pointer of the initialized array
+** n: the size of the nullified space
+
+output:
+** It returns the same pointer array, with data cleared.
 */
 void	*ft_bzero(void *s, size_t n)
 {

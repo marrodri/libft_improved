@@ -11,7 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+usage:
+**
 
+input:
+** s: th string on which to iterate
+** f: the function to apply to each character
+
+output: 
+**a newly created string, that is iterated from the s array, which applied
+the f function to each character.
+*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		str_len;

@@ -53,6 +53,18 @@ char	*ft_setword(char *s, int word_len, int str_i)
 	return (word);
 }
 
+/*
+usage:
+** it 
+
+input:
+** s: the array to split 
+** c: the delimiter character. 
+
+output: 
+** it returns a double pointer array, where it has the splitted s,
+into an array of strings.
+*/
 char	**ft_split(char const *s, char c)
 {
 	int		counted_words;

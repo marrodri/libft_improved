@@ -41,6 +41,17 @@ char	*ft_itoa_exceptions(int n)
 	return (NULL);
 }
 
+/*
+usage:
+**
+
+input:
+** n: the integer to conver to a string.
+
+output: 
+**The newly created string, converted from the integer which represents
+its value.
+*/
 char	*ft_itoa(int n)
 {
 	int		num_len;

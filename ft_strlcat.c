@@ -11,7 +11,24 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+usage:
+**	it will concatenate strings, and return its total length of the 
+concatenated string. It takes the fll size of the buffer(dst), and
+null-terminate the result; as long as size is larger than 0 or the 
+size of dst array. it will copy up to size - 1 characters from src
+to dst.
 
+input:
+**	dst: the allocated array where it concatenates the src array.
+**	src: the allocated array that it will concatenate the dst array.
+**	size: the size of the concatenation.
+
+output: 
+** 	it will return the total length of dst array and src array.
+If the size is less than the size of dst array, it will return 
+the size with the length of the src array.
+*/
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len;

@@ -50,17 +50,17 @@ int	asciitointconverter(char *nptr, int nptr_numlen, int pow_ten, int i)
 }
 
 /*
-** ascii val '0'=48, '9'=57
-**	// the atoi function converts the string to int.
-**	//first gets the length of the str.
+usage:
+** It converts the passed array to a new integer.
+It will skip any space founded at the beggining and
+it will stop when any other non-numeric character is founded.
 
-**	// then it will iterate the str one by one, starting
-**	//from the end char to start
-**	// each character converted to int, it will be multiplied
-**	// by 10 and summed with the total value.
-**	// '1234'
+input:
+**	nptr: the string to convert to integer number.
+
+output: 
+**	the converted integer from the string.
 */
-
 int	ft_atoi(const char *nptr)
 {
 	int	nptr_numlen;

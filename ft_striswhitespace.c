@@ -11,7 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+usage:
+**
 
+input:
+**
+
+output: 
+**
+*/
 int	ft_striswhitespace(char *str)
 {
 	int	i;
