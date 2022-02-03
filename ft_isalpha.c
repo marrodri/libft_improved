@@ -13,12 +13,19 @@
 #include "libft.h"
 
 /*
-** usage: ft_isalpha(int c)
-** it checks the input and returns 1 if its alphabetic letter;
-**    otherwise, it returns a 0.
-** asci1i values: 65 = A, 90 = Z; 97 = a, 122 = z
-*/
+usage:
+**	it checks the input 'c' and returns 1 if its alphabetic letter,
+whether its uppercase or lower case;
+otherwise, it returns a 0.
+--ASCII values: 65 = A, 90 = Z; 97 = a, 122 = z
 
+input:
+**	c: the character to check
+
+output:
+**	returns 1 if the value is an alphabetic character, otherwise 0 if
+its any other character.
+*/
 int	ft_isalpha(int c)
 {
 	if (ft_islower(c) || ft_isupper(c))

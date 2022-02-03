@@ -11,12 +11,19 @@
 /* ************************************************************************** */
 
 /*
-** usage: ft_isdigit(int c)
-** it checks the input and returns 1 if the character is a number;
-**    otherwise, it returns a 0.
-** ascii values: 48 = '0', 57 = '9'
-*/
+usage:
+**	it checks the character 'c' and returns 1 if the character is a number;
+otherwise, it returns a 0.
+--ASCII values: 48 = '0', 57 = '9'
 
+input:
+**	c: the character to check
+
+output:
+**	Returns 1 is the character is a number; otherwise, 0 if its any
+other character
+
+*/
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

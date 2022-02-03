@@ -12,9 +12,17 @@
 
 #include "libft.h"
 
-// 32 = " ", 126 = "~"
-//check if this should be from the start at
-//0, that is null.
+/*
+usage:
+**	It checks the character 'c' if its an ASCII character or not.
+ASCII values:  32 = " ", 126 = "~"
+input:
+**	c: the character to check
+
+output: 
+**	It returns 1 if the character 'c' is an ascii character, otherwise
+returns 0.
+*/
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

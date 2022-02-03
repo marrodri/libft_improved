@@ -13,21 +13,17 @@
 #include "libft.h"
 
 /*
-** usage: ft_isalnum(int c)
-** it checks the input and returns 1 if its alphabetic letter;
-**    otherwise, it returns a 0.
-** ascii values: 65 = A, 90 = Z; 97 = a, 122 = z
-*/
-
-/*
 usage:
-**
+** it checks the input 'c' and returns 1 if its alphabetic letter or number;
+otherwise, it returns a 0.
+** 
 
 input:
-**
+** c: the character to check
 
 output: 
-**
+** returns 1 if the character is an alphabetic character or number; otherwise,
+returns 0.
 */
 int	ft_isalnum(int c)
 {

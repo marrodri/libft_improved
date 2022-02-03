@@ -11,11 +11,18 @@
 /* ************************************************************************** */
 
 /*
-** ft_strlen
-** input: allocated string
-** output: it returns the total length of a string. 
-*/
+usage:
+**	It checks the total length of characters of a string 'str' and
+returns it's value. The function will stop when a NULL byte is encountered,
+even if there are characters after the NULL byte.
 
+input:
+**	str: allocated string
+
+output: 
+**	It returns the total length of the string, excluding the NULL byte.
+
+*/
 int	ft_strlen(char *str)
 {
 	int	str_len;

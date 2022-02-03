@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/*
+usage:
+** It copies 'n' bytes from emory area 'src' to memory area 'dest'.
+The memory doesn't overlap.
+
+input:
+**	dest: the memory area to write
+**	src: the memory area to copy from
+**	n: the number of bytes to copy.
+
+output:
+** It returns a pointer of the initial 'dest' memory area.
+*/
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t			i;

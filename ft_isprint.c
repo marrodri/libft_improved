@@ -13,9 +13,16 @@
 #include "libft.h"
 
 /*
-**
-*/
+usage:
+**	It checks the character 'c' if it can be printed or not.
 
+input:
+**	c: the character to check
+
+output: 
+**	It returns 1 if the character 'c' is a printable character, otherwise
+returns 0.
+*/
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)

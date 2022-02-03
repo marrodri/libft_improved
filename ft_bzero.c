@@ -15,7 +15,7 @@
 /*
 usage:
 ** ft_bzero will set the data array to 0, starting from
-the pointed memory address to the defined length of the memory
+the pointed memory address of 's', to the defined length of the memory
 to delete.
 
 input:
