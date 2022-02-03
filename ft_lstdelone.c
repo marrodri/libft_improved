@@ -14,13 +14,16 @@
 
 /*
 usage:
-**	
+**	it takes the current node of the list and deletes the content, using
+passed function 'del' and free the current node. the deleted node is set to
+NULL. The data of 'next', is NOT deleted. 
 
 input:
-**
+**	lst: the current element to delete.
+**	del: the address of the function used to delete the content.
 
 output: 
-**
+**	None.
 */
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {

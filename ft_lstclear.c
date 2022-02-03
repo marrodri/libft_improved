@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/*
+usage:
+**	it deletes and frees the whole list and it's content of each node,
+with the passed function 'del'. the list and content is set to NULL
+after deletion. 
+
+input:
+**	lst: the list to clear.
+**	del: the address of the function used to delete the content.
+
+output: 
+**	None.
+*/
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp_node;

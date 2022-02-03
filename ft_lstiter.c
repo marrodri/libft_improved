@@ -14,13 +14,15 @@
 
 /*
 usage:
-**
+** It iterates the list 'lst' and applies the function 'f' to
+each  node's content.
 
 input:
-**
+**	lst: the address of a list
+**	f: the address of a function used to iterate the list.
 
 output: 
-**
+**	None
 */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
