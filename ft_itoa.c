@@ -43,14 +43,15 @@ char	*ft_itoa_exceptions(int n)
 
 /*
 usage:
-**
+**	It allocates and returns a string, that which represents the 
+	integer 'n' as an argument. 
 
 input:
-** n: the integer to conver to a string.
+**	n: the integer to conver to a string.
 
 output: 
-**The newly created string, converted from the integer which represents
-its value.
+**	The newly created string, that which represents the value of the
+ 	passed integer. If the allocation fails, a NULL pointer is returned. 
 */
 char	*ft_itoa(int n)
 {

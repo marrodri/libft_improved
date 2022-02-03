@@ -13,12 +13,19 @@
 #include "libft.h"
 
 /*
-** pre-str: preffix string 
-** suf-str: suffix string
-**	output: the new concattenated string
-**
-*/
+usage:
+**	it allocates and returns a new concatenated string, from
+the passed arrays, 'pre_str' and 'suf_str' 
 
+input:
+**	pre_str: prefix string array
+**	suf_str: suffix string array
+
+output:
+**	It returns a the concatenated string. If the allocation fails,
+a NULL pointer is returned.
+
+*/
 char	*ft_strjoin(char const *pre_str, char const *suf_str)
 {
 	char	*str_joined;

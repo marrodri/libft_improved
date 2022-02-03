@@ -14,6 +14,16 @@
 
 //add the new list, to the front of the lst.
 
+/*
+usage:
+**
+
+input:
+**
+
+output: 
+**	 None.
+*/
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (lst)

@@ -55,7 +55,8 @@ char	*ft_setword(char *s, int word_len, int str_i)
 
 /*
 usage:
-** it 
+** it allocates and creates an array of words from the passed 
+array 's', that which is delimited by the character 'c'.
 
 input:
 ** s: the array to split 
@@ -63,7 +64,8 @@ input:
 
 output: 
 ** it returns a double pointer array, where it has the splitted s,
-into an array of strings.
+into an array of strings. It returns a NULL pointer if the
+allocation fails.
 */
 char	**ft_split(char const *s, char c)
 {

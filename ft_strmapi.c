@@ -13,15 +13,16 @@
 #include "libft.h"
 /*
 usage:
-**
+** it applies the function 'f' to each character from 's' string, and
+its result is returned in a new allocated string.
 
 input:
 ** s: th string on which to iterate
 ** f: the function to apply to each character
 
 output: 
-**a newly created string, that is iterated from the s array, which applied
-the f function to each character.
+**	a newly created string, that is iterated from the s array, with 
+the 'f' function. A NULL pointer is returned, if the allocation fails.
 */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

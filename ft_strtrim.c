@@ -24,6 +24,20 @@ int	ft_strhaschar(const char *str, char c)
 	return (str[i] == c);
 }
 
+/*
+usage:
+**	it allocates and returns the trimmed string from s1, that which
+characters from 'set' array, are removed from start and end of the 
+'s1' string.
+ 
+input:
+**	s1: the string to trim
+**	set: the set of characters to find in s1.
+
+output:
+**	the trimmed string, from the 'set' characters. If the allocation 
+fails, it returns NULL.
+*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		start;

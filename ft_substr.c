@@ -13,14 +13,19 @@
 #include "libft.h"
 
 /*
-** input:
-**	--s: the string that will create the substring
-** 	--start: the starting index of the string, that will create the substring 
-**	--len: the maximum length of the substring.
-** output: it returns a substring if the allocation is successful.
-		if not, then it returns NULL.
-*/
+usage:
+**	It allocates and returns a substring from string 's'. The
+substring begins at index 'start' and is of maximum size 'len' 
 
+input:
+**	s: the string that will create the substring
+**	start: the starting index of the string, that will create the substring 
+**	len: the maximum length of the substring.
+
+output:
+**	it returns a new allocated array of the substring.
+if the allocation fails, it returns NULL.
+*/
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;

@@ -13,13 +13,15 @@
 #include "libft.h"
 /*
 usage:
-**
+**	Writes the integer 'n' to the given file descriptor. It can write 
+on the console, if the fd value is set to 1.
 
 input:
-**
+**  n: the integer value to write.
+**	fd: the selected file descriptor to write. 
 
-output: 
-**
+output:
+** None.
 */
 void	ft_putnbr_fd(int n, int fd)
 {

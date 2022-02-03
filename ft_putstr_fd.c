@@ -11,7 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+usage:
+** it writes the string 's' to the given file descriptor 'fd'. It can
+be used to output on the terminal, if the fd value is set to 1.
 
+input:
+**	s: the string to write
+**	fd: the selected file descriptor value to write
+
+output: 
+**	 None.
+*/
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

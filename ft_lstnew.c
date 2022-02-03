@@ -11,7 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+usage:
+** It allocates and returns a new node. The content is initialized,
+by passing the void pointer of the argument 'content'. The variable
+'next', is initialized to NULL.
 
+input:
+** content: the content to create the new node with.
+
+output: 
+**	 None.
+*/
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;
