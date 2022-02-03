@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+usage:
+**	it will return the pointer of the last element of the list.
+
+input:
+**	lst: the list to return the last node.
+
+output: 
+**	the pointer of the last node of the list.
+*/
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

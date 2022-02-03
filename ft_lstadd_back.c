@@ -11,7 +11,17 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+usage:
+** it add the 'new' node at the end of the list.
 
+input:
+** lst: the address of the list
+** new: the node to add at the end of the list.
+
+output: 
+** None.
+*/
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*head;

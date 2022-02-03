@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+usage:
+**	
+
+input:
+**
+
+output: 
+**
+*/
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	t_list	*top_head;

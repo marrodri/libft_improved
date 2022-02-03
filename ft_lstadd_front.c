@@ -16,10 +16,13 @@
 
 /*
 usage:
-**
+** It adds a the node 'new' to the list 'lst' to the 
+front list, and is pointed as the new first node of the
+list
 
 input:
-**
+**	: the list that points to the first node of the list.
+**	: the new node to add in the list.
 
 output: 
 **	 None.

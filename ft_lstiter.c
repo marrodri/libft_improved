@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+usage:
+**
+
+input:
+**
+
+output: 
+**
+*/
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*head;
