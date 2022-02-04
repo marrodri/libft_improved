@@ -12,7 +12,17 @@
 
 #include "libft.h"
 
-// use memmove: str1 dest, str2 src, n-number of bytes to copy.
+/*
+usage:
+** It returns a pointer to a new string, which is a duplicate
+of the string 's'.
+
+input:
+**	s: the string to duplicate
+
+output: 
+**	it returns a newly allocated copy of the string. 
+*/
 char	*ft_strdup(char *s)
 {
 	int		str_len;

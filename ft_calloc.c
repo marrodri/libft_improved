@@ -14,7 +14,10 @@
 
 /*
 usage:
-**
+** it allocate memory for an array of number elements 
+'n_items' of 'size' bytes each and returns a pointer to 
+the allocated memory. The memory value is set to 0, 
+by default. 
 
 input:
 **	n_items: the number of items to allocate
