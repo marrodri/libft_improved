@@ -12,7 +12,18 @@
 
 #include "libft.h"
 
-// ** ascii values: 65 = A, 90 = Z; 97 = a, 122 = z
+/*
+usage:
+** If 'c' is a lowercase letter, it returns its uppercase equivalent.
+** ascii values: 65 = A, 90 = Z; 97 = a, 122 = z
+
+input:
+** c: the lower case character to make it upper. 
+
+output: 
+** the upper case character, from the lower case character 'c'.
+If the character is not an alphabetic character, 'c' is returned.
+*/
 int	ft_toupper(int c)
 {
 	if (ft_islower(c))

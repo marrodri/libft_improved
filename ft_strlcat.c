@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 /*
 usage:
 **	it will concatenate strings, and return its total length of the 
@@ -22,7 +23,8 @@ to dst.
 input:
 **	dst: the allocated array where it concatenates the src array.
 **	src: the allocated array that it will concatenate the dst array.
-**	size: the size of the concatenation.
+**	size: the size of the concatenation. a byte is reserved
+	for the NULL byte.
 
 output: 
 ** 	it will return the total length of dst array and src array.

@@ -14,13 +14,19 @@
 
 /*
 usage:
-**
+**	It locates the first occurrence of the null-terminated string 'little'
+in the string 'big', where not more than 'len' characters are searched.
+Characters that appear after a '\0' are not searched.
 
 input:
-**
+**	big: The string to scan.
+**	litte: The string to find in the 'big' string.
+**	len: the length of the search area.
 
 output: 
-**
+** If little is an empty string, 'big' is returned; if 'little' occurs
+nowhen in 'big', NULL is returned; otherwise a pointer to the first 
+character of the first occurrence of 'little' is returned.
 */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
