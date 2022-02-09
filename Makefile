@@ -53,7 +53,7 @@ OBJ = $(SRC:.c=.o)
 
 # @gcc $(CFLAGS) -c $(SRC)
 $(NAME):
-		@gcc $(CFLAGS) -c $(SRC) -g
+		@clang -gdwarf $(CFLAGS) -c $(SRC)
 		@ar rc $(NAME) $(OBJ)
 		@ranlib $(NAME)
 
